@@ -1,24 +1,44 @@
-# Foto de Referência
+# DevLinks
 
-Eu n curto muito as montanhas de fundo use esse que te mandei foto de base
+Página pessoal de links desenvolvida para centralizar portfólio, projetos, currículo e contatos em uma interface moderna, responsiva e alinhada à minha identidade profissional.
 
-This project was built with [Lovable](https://lovable.dev).
+## ✨ Sobre o projeto
 
-## Build with Lovable
+O DevLinks reúne meus principais canais profissionais em um único lugar, com foco em design, usabilidade e experiência do usuário.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/704e6f1b-9c29-4682-b827-dc10895b6b25).
+## 🛠️ Tecnologias
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+<div align="center">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" width="50" alt="React" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="50" alt="TypeScript" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://cdn.simpleicons.org/lovable/E85D75" width="50" alt="Lovable" />
+</div>
 
-## Development
+<p align="center">
+  React • TypeScript • Lovable
+</p>
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## 🚀 Funcionalidades
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+- Apresentação pessoal e profissional
+- Acesso ao portfólio, projetos e currículo
+- Links para redes sociais e contato
+- Layout responsivo para desktop e dispositivos móveis
+- Interface com foco em identidade visual e navegação intuitiva
+
+## 💻 Como executar localmente
+
+**Pré-requisitos:** Node.js e npm instalados.
+
+```bash
+git clone <url-do-repositorio>
+cd <nome-do-repositorio>
+npm install
 npm run dev
-```
+---
+
+<p align="center">
+  Desenvolvido com React, TypeScript e Lovable.
+</p>
