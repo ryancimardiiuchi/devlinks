@@ -13,12 +13,8 @@ O DevLinks reúne meus principais canais profissionais em um único lugar, com f
   &nbsp;&nbsp;&nbsp;
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" width="50" alt="TypeScript" />
   &nbsp;&nbsp;&nbsp;
-  <img src="https://cdn.simpleicons.org/lovable/E85D75" width="50" alt="Lovable" />
+ <img src="https://lovable.dev/favicon.svg" alt="Lovable" width="50" height="50" />
 </div>
-
-<p align="center">
-  React • TypeScript • Lovable
-</p>
 
 ## 🚀 Funcionalidades
 
