@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { contact, links, profile, socials } from "@/data/links";
 import {
-  ContactButton, Header, LinkButton, PortraitArch, SocialLinks, StatusLabel, TechMarquee, ease,
+  Backdrop, ContactButton, Header, LinkButton, PortraitArch, SocialLinks, StatusLabel, ease,
 } from "./parts";
 
 function NameDesktop() {
@@ -26,7 +26,8 @@ function NameDesktop() {
 export default function BioPage() {
   const linkDelay = (i) => 0.3 + i * 0.07;
   return (
-    <div className="sky flex min-h-screen min-h-[100svh] flex-col">
+    <div className="relative flex min-h-screen min-h-[100svh] flex-col">
+      <Backdrop />
       <main className="mx-auto flex w-full max-w-[1120px] flex-1 flex-col px-5 pt-4 lg:px-10 lg:pt-8">
         <Header />
 
@@ -79,7 +80,6 @@ export default function BioPage() {
           </div>
         </div>
       </main>
-      <TechMarquee />
     </div>
   );
 }

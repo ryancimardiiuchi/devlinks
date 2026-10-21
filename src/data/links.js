@@ -21,5 +21,3 @@ export const socials = [
   { id: "linkedin", label: "LinkedIn", href: "#" },
   { id: "youtube", label: "YouTube", href: "#" },
 ];
-
-export const techs = ["Node.js", "Express", "React", "Prisma", "Socket.IO"];
