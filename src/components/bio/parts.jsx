@@ -153,7 +153,7 @@ export function SocialLinks({ items, delay }) {
             <a
               href={s.href}
               aria-label={s.label}
-              className="grid h-12 w-12 place-items-center rounded-full border border-line text-text-2 transition-colors hover:border-primary hover:text-primary focus-visible:outline-2 focus-visible:outline-accent lg:h-11 lg:w-11"
+              className="grid h-12 w-12 place-items-center rounded-full border border-line bg-surface/70 text-foreground backdrop-blur-sm dark:bg-transparent dark:text-text-2 transition-colors hover:border-primary hover:text-primary focus-visible:outline-2 focus-visible:outline-accent lg:h-11 lg:w-11"
             >
               <Icon size={18} />
             </a>
@@ -174,7 +174,7 @@ export function Backdrop() {
       <div className="stars-2 absolute inset-0" />
       <div className="stars-3 absolute inset-0" />
       <div className="hero-stars absolute inset-0" />
-      <img src={mountains} alt="" width={1920} height={1088} className="absolute inset-x-0 bottom-0 h-[75vh] w-full object-cover object-[25%_bottom] opacity-30 mix-blend-multiply dark:opacity-90 dark:mix-blend-normal [mask-image:linear-gradient(to_bottom,transparent,black_35%)]" />
+      <img src={mountains} alt="" width={1920} height={1088} className="absolute inset-x-0 bottom-0 h-[75vh] w-full object-cover object-[25%_bottom] opacity-45 mix-blend-multiply dark:opacity-90 dark:mix-blend-normal [mask-image:linear-gradient(to_bottom,transparent,black_35%)]" />
       <div className="absolute inset-0 [background:radial-gradient(40%_30%_at_70%_85%,oklch(0.6_0.2_255/0.25),transparent_70%),radial-gradient(35%_40%_at_10%_70%,oklch(0.55_0.2_260/0.2),transparent_70%)]" />
       <div className="vignette absolute inset-0" />
       <div className="shoot shoot-a" />
