@@ -1,3 +1,4 @@
+import mountains from "@/assets/mountains.jpg";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import {
@@ -173,6 +174,8 @@ export function Backdrop() {
       <div className="stars-2 absolute inset-0" />
       <div className="stars-3 absolute inset-0" />
       <div className="hero-stars absolute inset-0" />
+      <img src={mountains} alt="" width={1920} height={1088} className="absolute inset-x-0 bottom-0 h-[75vh] w-full object-cover object-[25%_bottom] opacity-90 dark:opacity-90 [mask-image:linear-gradient(to_bottom,transparent,black_35%)]" />
+      <div className="absolute inset-0 [background:radial-gradient(40%_30%_at_70%_85%,oklch(0.6_0.2_255/0.25),transparent_70%),radial-gradient(35%_40%_at_10%_70%,oklch(0.55_0.2_260/0.2),transparent_70%)]" />
       <div className="vignette absolute inset-0" />
       <div className="shoot shoot-a" />
       <div className="shoot shoot-b" />
