@@ -4,7 +4,7 @@ import {
   ArrowRight, ArrowUpRight, Download, Droplet, FileText, Folder,
   Github, Instagram, Linkedin, Moon, Sun, Youtube,
 } from "lucide-react";
-import { profile, techs } from "@/data/links";
+import { profile } from "@/data/links";
 
 export const ease = [0.22, 1, 0.36, 1];
 export const rise = (delay = 0, y = 16) => ({
@@ -163,21 +163,20 @@ export function SocialLinks({ items, delay }) {
   );
 }
 
-export function TechMarquee() {
-  const row = [...techs, ...techs, ...techs, ...techs];
+export function Backdrop() {
   return (
-    <div aria-hidden="true" className="overflow-hidden border-t border-line bg-background py-2.5 lg:py-3.5">
-      <div className="marquee flex w-max">
-        {[0, 1].map((k) => (
-          <div key={k} className="flex shrink-0">
-            {row.map((t, i) => (
-              <span key={i} className="flex items-center gap-5 pr-5 font-mono text-xs uppercase tracking-widest text-text-2">
-                {t} <Star className="h-2.5 w-2.5 text-primary" />
-              </span>
-            ))}
-          </div>
-        ))}
-      </div>
+    <div aria-hidden="true" className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+      <div className="depth absolute inset-0" />
+      <div className="aurora aurora-breathe absolute -inset-[12%]" />
+      <div className="band absolute -inset-[25%]" />
+      <div className="stars-1 absolute inset-0" />
+      <div className="stars-2 absolute inset-0" />
+      <div className="stars-3 absolute inset-0" />
+      <div className="hero-stars absolute inset-0" />
+      <div className="vignette absolute inset-0" />
+      <div className="shoot shoot-a" />
+      <div className="shoot shoot-b" />
+      <div className="grain absolute inset-0" />
     </div>
   );
 }
