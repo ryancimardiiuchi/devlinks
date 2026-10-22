@@ -73,18 +73,28 @@ export function Header() {
   );
 }
 
-export function PortraitArch({ className = "" }) {
+export function Portrait({ className = "" }) {
   const [ok, setOk] = useState(Boolean(profile.photo));
   return (
     <motion.div {...rise(0, 20)} className={`relative shrink-0 ${className}`}>
-      <div className="h-full w-full overflow-hidden rounded-t-full rounded-b-lg bg-primary">
+      <span className="portrait-halo absolute -inset-[28%] rounded-full" aria-hidden="true" />
+      <span className="portrait-ring-soft absolute -inset-[8%] rounded-full" aria-hidden="true" />
+      <span className="portrait-ring absolute -inset-[3%] rounded-full" aria-hidden="true" />
+      <span className="portrait-face portrait-edge relative block h-full w-full overflow-hidden rounded-full">
         {ok ? (
-          <img src={profile.photo} alt="Ryan Cimardi Iuchi" width={132} height={164} className="h-full w-full object-cover" onError={() => setOk(false)} />
+          <img
+            src={profile.photo}
+            alt="Ryan Cimardi Iuchi"
+            width={160}
+            height={160}
+            className="h-full w-full origin-top scale-[1.04] translate-y-[9%] object-cover object-[42%_top]"
+            onError={() => setOk(false)}
+          />
         ) : (
-          <span className="flex h-full items-end justify-center font-display text-[3.4em] font-extrabold leading-[0.78] tracking-tighter text-ink">RC</span>
+          <span className="flex h-full items-center justify-center font-display text-[0.68em] font-extrabold tracking-tighter text-ink">RC</span>
         )}
-      </div>
-      <span className="absolute -right-3 bottom-3 grid h-[0.95em] w-[0.95em] place-items-center rounded-full border border-line bg-ink text-primary">
+      </span>
+      <span className="absolute -bottom-1 -right-1 grid h-[0.82em] w-[0.82em] place-items-center rounded-full border border-line bg-ink text-primary">
         <Star className="spin-slow h-1/2 w-1/2" />
       </span>
     </motion.div>

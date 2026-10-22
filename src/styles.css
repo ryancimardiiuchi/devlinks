@@ -53,6 +53,12 @@
   --glow-b: oklch(0.42 0.13 325 / 0.12);
   --glow-c: oklch(0.45 0.09 195 / 0.1);
   --band: oklch(0.52 0.06 260 / 0.045);
+  --photo-glow: oklch(0.58 0.22 268 / 0.5);
+  --photo-ring-1: oklch(0.66 0.24 268 / 0.95);
+  --photo-ring-2: oklch(0.8 0.13 272 / 0.8);
+  --photo-edge: oklch(1 0 0 / 0.16);
+  --photo-face-1: oklch(0.3 0.11 272);
+  --photo-face-2: oklch(0.52 0.22 268);
   --star: oklch(1 0 0 / 0.5);
   --streak: oklch(0.92 0.06 260 / 0.9);
   --vignette: oklch(0 0 0 / 0.4);
@@ -83,6 +89,12 @@
   --glow-b: oklch(0.8 0.11 325 / 0.28);
   --glow-c: oklch(0.86 0.08 195 / 0.3);
   --band: transparent;
+  --photo-glow: oklch(0.55 0.2 268 / 0.5);
+  --photo-ring-1: oklch(0.5 0.24 268 / 0.95);
+  --photo-ring-2: oklch(0.62 0.18 272 / 0.8);
+  --photo-edge: oklch(0.3 0.05 268 / 0.18);
+  --photo-face-1: oklch(0.4 0.15 272);
+  --photo-face-2: oklch(0.6 0.2 268);
   --star: oklch(0.45 0.15 268 / 0.4);
   --streak: oklch(0.5 0.15 268 / 0.5);
   --vignette: oklch(0.4 0.05 268 / 0.12);
@@ -172,6 +184,30 @@
 @utility grain {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   opacity: var(--grain-opacity);
+}
+
+@utility portrait-face {
+  background-image: radial-gradient(78% 78% at 50% 22%, var(--photo-face-2), var(--photo-face-1) 78%);
+}
+
+@utility portrait-halo {
+  background-image: radial-gradient(circle at 50% 55%, var(--photo-glow), transparent 68%);
+  filter: blur(22px);
+}
+
+@utility portrait-ring {
+  background-image: conic-gradient(from 0deg, transparent 0deg, var(--photo-ring-1) 80deg, var(--photo-ring-2) 150deg, transparent 250deg, transparent 360deg);
+  animation: spin-slow 12s linear infinite;
+}
+
+@utility portrait-ring-soft {
+  background-image: conic-gradient(from 180deg, transparent 0deg, var(--photo-ring-2) 70deg, var(--photo-ring-1) 140deg, transparent 240deg, transparent 360deg);
+  filter: blur(7px);
+  animation: spin-slow 18s linear infinite reverse;
+}
+
+@utility portrait-edge {
+  box-shadow: inset 0 0 0 1px var(--photo-edge), 0 18px 44px -18px var(--photo-glow);
 }
 
 @utility shoot {
