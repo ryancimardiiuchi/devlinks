@@ -1,10 +1,12 @@
+import ryanCutout from "@/assets/ryan-cutout.png";
+
 // Substitua os "#" pelos endereços reais.
 export const profile = {
   name: ["Ryan", "Cimardi", "Iuchi"],
-  role: "Dev back-end",
+  role: "Dev. de Software & IA",
   location: "Lages, SC",
-  bio: "Construo APIs, bancos de dados e apps em tempo real.",
-  photo: "/__l5e/assets-v1/ba5ced08-7a6a-45b5-a0be-8c7357361041/ryan-cutout.png",
+  bio: "Transformando ideias em soluções digitais. Criando soluções que fazem a diferença.",
+  photo: ryanCutout,
 };
 
 export const links = [
@@ -13,11 +15,11 @@ export const links = [
   { id: "cv", icon: "file", title: "Currículo", description: "Trajetória profissional · PDF", href: "/__l5e/assets-v1/9615ae3e-1ace-4a83-a124-73937392afac/Curriculo_Ryan_Cimardi_Iuchi.pdf", variant: "outline", download: "Curriculo_Ryan_Cimardi_Iuchi.pdf" },
 ];
 
-export const contact = { label: "Falar comigo", href: "#" };
+export const contact = { label: "Falar comigo", href: "#https://api.whatsapp.com/send/?phone=5549999471251&text&type=phone_number&app_absent=0" };
 
 export const socials = [
-  { id: "instagram", label: "Instagram", href: "#" },
-  { id: "github", label: "GitHub", href: "#" },
-  { id: "linkedin", label: "LinkedIn", href: "#" },
-  { id: "youtube", label: "YouTube", href: "#" },
+  { id: "instagram", label: "Instagram", href: "https://www.instagram.com/ryan_cimardi" },
+  { id: "github", label: "GitHub", href: "https://github.com/ryancimardiiuchi" },
+  { id: "linkedin", label: "LinkedIn", href: "https://www.linkedin.com/in/ryan-cimardi-iuchi-4aa2a93b6" },
+  { id: "youtube", label: "YouTube", href: "https://www.youtube.com/@ryan_cimardi" },
 ];

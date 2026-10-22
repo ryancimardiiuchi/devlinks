@@ -65,8 +65,8 @@ export function ThemeToggle() {
 export function Header() {
   return (
     <header className="flex items-center justify-between">
-      <span className="font-display text-2xl font-extrabold tracking-tight">
-        Rc<span className="text-accent">.</span>
+        <span className="font-display text-2xl font-extrabold tracking-tight">
+        RC<span className="text-accent">.</span>
       </span>
       <ThemeToggle />
     </header>

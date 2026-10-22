@@ -4,7 +4,7 @@ import BioPage from "@/components/bio/BioPage";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ryan Cimardi Iuchi — Dev back-end" },
+      { title: "Ryan Cimardi Iuchi — Dev. de Software & IA" },
       { name: "description", content: "Construo APIs, bancos de dados e apps em tempo real. Portfólio, Lavô+, currículo e contato." },
       { property: "og:title", content: "Ryan Cimardi Iuchi — Dev back-end" },
       { property: "og:description", content: "Construo APIs, bancos de dados e apps em tempo real." },
