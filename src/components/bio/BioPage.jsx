@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { contact, links, profile, socials } from "@/data/links";
 import {
-  Backdrop, ContactButton, Header, LinkButton, PortraitArch, SocialLinks, StatusLabel, ease,
+  Backdrop, ContactButton, Header, LinkButton, Portrait, SocialLinks, StatusLabel, ease,
 } from "./parts";
 
 function NameDesktop() {
@@ -34,7 +34,7 @@ export default function BioPage() {
         {/* Mobile */}
         <div className="flex flex-1 flex-col justify-center gap-4 py-4 lg:hidden">
           <div className="flex flex-col items-center text-center">
-            <PortraitArch className="h-[clamp(96px,17svh,150px)] w-[clamp(78px,14svh,122px)] text-[clamp(30px,5.4svh,44px)]" />
+            <Portrait className="size-[clamp(104px,17svh,148px)] text-[clamp(30px,5.4svh,44px)]" />
             <motion.h1
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
@@ -63,8 +63,8 @@ export default function BioPage() {
         <div className="hidden flex-1 items-center gap-16 py-10 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,520px)]">
           <div className="min-w-0">
             <NameDesktop />
-            <div className="mt-8 flex items-end gap-7">
-              <PortraitArch className="h-[164px] w-[132px] text-[48px]" />
+            <div className="mt-8 flex items-center gap-7">
+              <Portrait className="size-[152px] text-[48px]" />
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.35 }} className="flex flex-col gap-4">
                 <StatusLabel />
                 <p className="max-w-[30ch] text-[17px] leading-relaxed text-text-2">{profile.bio}</p>
