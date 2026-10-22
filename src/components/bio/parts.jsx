@@ -100,14 +100,15 @@ export function StatusLabel() {
   );
 }
 
-export function LinkButton({ icon, title, description, href, variant = "outline", tag, download, delay = 0 }) {
+export function LinkButton({ icon, title, description, href, variant = "outline", tag, download, external, delay = 0 }) {
   const Icon = icons[icon] || Folder;
   const primary = variant === "primary";
   return (
     <motion.a
       {...rise(delay)}
       href={href}
-      {...(download ? { download: true } : {})}
+      {...(download ? { download } : {})}
+      {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       className={`group flex items-center gap-3 rounded-lg border p-3 transition-[transform,border-color] duration-300 hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent lg:gap-4 lg:p-5 ${
         primary ? "border-primary bg-primary text-primary-foreground" : "border-line bg-surface text-foreground hover:border-primary"
       }`}
