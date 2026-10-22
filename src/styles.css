@@ -89,9 +89,9 @@
   --glow-b: oklch(0.8 0.11 325 / 0.28);
   --glow-c: oklch(0.86 0.08 195 / 0.3);
   --band: transparent;
-  --photo-glow: oklch(0.55 0.2 268 / 0.32);
-  --photo-ring-1: oklch(0.5 0.24 268 / 0.8);
-  --photo-ring-2: oklch(0.62 0.18 272 / 0.65);
+  --photo-glow: oklch(0.55 0.2 268 / 0.5);
+  --photo-ring-1: oklch(0.5 0.24 268 / 0.95);
+  --photo-ring-2: oklch(0.62 0.18 272 / 0.8);
   --photo-edge: oklch(0.3 0.05 268 / 0.18);
   --photo-face-1: oklch(0.4 0.15 272);
   --photo-face-2: oklch(0.6 0.2 268);

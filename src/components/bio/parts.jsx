@@ -87,7 +87,7 @@ export function Portrait({ className = "" }) {
             alt="Ryan Cimardi Iuchi"
             width={160}
             height={160}
-            className="h-full w-full origin-top scale-[1.06] translate-y-[7%] object-cover object-[42%_top]"
+            className="h-full w-full origin-top scale-[1.04] translate-y-[9%] object-cover object-[42%_top]"
             onError={() => setOk(false)}
           />
         ) : (
