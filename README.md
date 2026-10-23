@@ -1,3 +1,6 @@
+<img width="1907" height="907" alt="Captura de tela 2026-10-22 221913" src="https://github.com/user-attachments/assets/7005e823-3176-4d9b-b0da-bded77c94eed" />
+
+
 # DevLinks
 
 Página pessoal de links desenvolvida para centralizar portfólio, projetos, currículo e contatos em uma interface moderna, responsiva e alinhada à minha identidade profissional.
